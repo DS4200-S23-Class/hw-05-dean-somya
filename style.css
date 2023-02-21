@@ -1,0 +1,22 @@
+body {
+	font-family: arial;
+}
+
+#column-1 {
+	flex: 60%;
+}
+
+#column-2 {
+	flex: 40%;
+	text-align: left;
+}
+
+.column-container {
+	display: flex;
+	flex-direction: row;
+	margin: 0px 32px;
+}
+
+.centered {
+	text-align: center;
+}
