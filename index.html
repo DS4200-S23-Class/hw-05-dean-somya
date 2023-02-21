@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html> 
-
-<head>
-    <meta charset=utf-8/>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="js/d3.v6.1.1/d3.min.js"></script>
     <title>hw-05</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <h1 class="centered">hw-05: Interactive Graph with D3</h1>
     <div class="column-container">
-        <div id="column-1"></div>
-        <div id="column-2"></div>
+      <div id="column-1">
+        <div id="vis1"></div>
+        <div id="vis2"></div>
+      </div>
+      <div id="column-2">
+        <div id="last-point-clicked"></div>
+        <div id="enter-point">
+          <div class="select-text">
+            Select the x coordinate for the point you want to add.
+            <span>
+              <select name="x-select" id="x-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select></span
+            >
+            <div class="select-text">
+              Select the y coordinate for the point you want to add.
+              <span>
+                <select name="y-select" id="y-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select></span
+              >
+            </div>
+            <button onclick="enterCoordinate()">Enter</button>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-</body>
-
+    <div>
+      <h2 class="centered">Acknowledgements</h2>
+      <ul>
+        <li>https://css-tricks.com/almanac/properties/s/stroke/</li>
+        <li>https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect</li>
+        <li>Previous assignments and demos</li>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
